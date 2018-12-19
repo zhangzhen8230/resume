@@ -1,0 +1,118 @@
+% !TEX program = xelatex
+% This is my resume
+% Chinese translation
+% by ice1000
+
+\documentclass{resume}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage[fallback]{xeCJK}
+
+%% \setmainfont[]{SimSun}
+%% \setCJKfallbackfamilyfont{rm}{HAN NOM B}
+\setCJKmainfont[BoldFont=SimHei,ItalicFont=Arial]{SimSun}
+%% \renewcommand{\thepage}{\Chinese{page}}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand\headrulewidth{0pt}
+
+
+\name{张真}
+\centerline{求职意向：自然语言处理|算法工程师}
+\basicInfo{
+  \email{zhangzhen82301@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 131-6141-1563} \textperiodcentered\ 
+  \github[zhangzhen8230]{https://github.com/zhangzhen8230/}
+  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+}
+\section{\faUsers\ 实习经历}
+
+\datedsubsection{\textbf{腾讯科技}, 北京}{2018.8 -- 2018.11}
+{医疗诊断预测，论文实验与撰写}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 负责相关论文的调研与复现，包括doctorAI，retain，dipole.
+  \item 负责收集不同数据集，并进行实验，包括数据集MIMICIII，MIMICII，CMS.
+  \item 分析标签编码的结构，在模型中添加引入层次结构知识，评价指标top30召回率从56.9\% 提升到62.3 \%
+  \item 尝试添加时序信息，评价指标top30召回率从基础的56.9 \%,提升到58.2\%.
+\end{itemize}
+\end{onehalfspacing}
+\vspace{-1ex}
+\section{\faGithubAlt\ 课题项目}
+\datedsubsection{\textbf{流式文档排版格式的智能化分析与优化方法}}{2017.9--2018.12}
+{国家自然科学基金，61672105}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item \textbf{语料库的收集.}确定标签集合与语料类别，编写标注插件，制定相应的xml scheme，最终获得5000篇标注语料.
+  \item \textbf{文档特征的提取.}提取格式特征18种，内容特征6种以及doc2vec编码的语义特征,将格式特征与内容特征进行特征处理.
+  \item \textbf{模型搭建.}针对文档构件类别不平衡问题，采用规则与神经网络相结合的方法；对文档类型多种多样等要求，构造迁移学习模型.针对文档构件的上下文关系，使用LSTM学习。
+    \item \textbf{系统集成.}完成文档结构自动识别系统，整合了上几届的代码。
+\end{itemize}
+\end{onehalfspacing}
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+%% \section{\faHeartO\ 成就}
+%% \datedline{}{Aug. 2017}
+
+\vspace{-1ex}
+\section{\faSitemap\ 竞赛经历}
+\datedsubsection{\textbf{天池对话领域竞赛}}{2018.6--2018.8}
+{“阿里小蜜机器人跨语言短文本匹配算法竞赛”,队长}
+\begin{onehalfspacing}
+\begin{itemize}
+	\item 针对文本匹配目标，构建跨语言的短文本匹配模型。从统计特征，NLP特征和图特征三个方面构造特征工程 \item 其中针对于跨语言问题，采用auto-encoder模型编码句子向量。
+	\item 最后采用Stack方式进行模型融合，最终在1027个队伍中，获得了初赛第5，复赛第8的成绩。
+
+\end{itemize}
+\end{onehalfspacing}
+\begin{onehalfspacing}
+\datedsubsection{\textbf{ CCF情感分析竞赛,32/1186}}{2018.2--2018.4}
+{景区口碑评价分值预测竞赛,队长}
+\begin{itemize}
+	\item 针对旅游景点的评论，构建评论打分模型。使用word2vec,doc2vec生成句子表示。
+	\item 使用lstm,textcnn等模型学习文档特征表示。
+	\item 最后采用blend方式进行模型融合，最终在1186个队伍中，获得了初赛第13，复赛第32的成绩。
+\end{itemize}
+\end{onehalfspacing}
+\vspace{-1ex}
+\section{\faCogs\ 技能}
+\begin{onehalfspacing}
+\begin{itemize}[parsep=0.25ex]
+  \item \textbf{编程语言}: 熟悉python C\#，java.
+  % compiler theories
+  \item \textbf{深度学习}:
+    两年nlp经验，熟悉tensorflow与keras框架，熟悉常见深度学习模型原理.
+
+  % language Kotlin
+  \item \textbf{英语能力}: CET-6 494分，良好的英语阅读能力.
+   \item \textbf{组织能力}:北京市优秀班集体（申请负责人），
+   优秀团支部,班集体（连续四年，负责人）， 优秀团干部（3次）			
+    \item \textbf{学业情况}: 校级二等奖学金（2次），三等奖学金（3次），三好学生
+
+\end{itemize}
+\end{onehalfspacing}
+% \section{\faHeartO\ Honors and Awards}
+% \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+% \datedline{Other awards}{2015}
+\vspace{-1ex}
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{北京信息科技大学}\          计算机学院，硕士}{2016.9 -- 现在}
+专业：数字文化传播，预计毕业日期：2019.6
+\datedsubsection{\textbf{北京信息科技大学}\          计算机学院，本科}{2012.9 -- 2016.6}
+专业：软件工程
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
